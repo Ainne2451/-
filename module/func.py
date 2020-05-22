@@ -57,11 +57,11 @@ def sendMulti(event):  #多項傳送
 	   TextSendMessage(  #傳送y文字
                 text = "洗錢的架構:1.特定罪犯行為 2.取得不法利益 3.洗清黑錢"
             ),
-	   TextSendMessage(  #傳送y文字
-                text = "洗錢三階段:1.處置 2.分層化 3.整合"
-            ),
 
 
+            TextSendMessage(  #傳送y文字
+                text ="https://www.youtube.com/watch?v=F-ESYoE0w0k"
+	    ),
 
         ]
         line_bot_api.reply_message(event.reply_token,message)
