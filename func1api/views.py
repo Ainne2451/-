@@ -26,58 +26,7 @@ def callback(request):
             if isinstance(event, MessageEvent):
                 if isinstance(event.message, TextMessage):
                     mtext = event.message.text
-                    if mtext == '@傳送文字':
-                        func.sendText(event)
-    
-                    elif mtext == '@傳送圖片':
-                        func.sendImage(event)
-                    elif mtext == '@傳送聲音':
-                        func.sendVoice(event)
-    
-                    elif mtext == '@傳送影片':
-                        func.sendVedio(event)
-                    elif mtext == '@傳送貼圖':
-                        func.sendStick(event)
-    
-                    elif mtext == '@多項傳送':
-                        func.sendMulti(event)
-    
-                    elif mtext == '@傳送位置':
-                        func.sendPosition(event)
-    
-                    elif mtext == '@快速選單':
-                        func.sendQuickreply(event)
-              
-                    elif mtext == '@按鈕樣板':
-                        func.sendButton(event)
-    
-                    elif mtext == '@確認樣板':
-                        func.sendConfirm(event)
-    
-                    elif mtext == '@轉盤樣板':
-                        func.sendCarousel(event)
-    
-                    elif mtext == '@圖片轉盤':
-                        func.sendImgCarousel(event)
-    
-                    elif mtext == '@購買披薩':
-                        func.sendPizza(event)
-    
-                    elif mtext == '@yes':
-                        func.sendYes(event)
-                    elif mtext == '@圖片地圖':
-                        func.sendImgmap(event)
-                        
-                    elif mtext == '@日期時間':
-                        func.sendDatetime(event)
-                        
-                    elif mtext == '@彈性配置':
-                        func.sendFlex(event)
-    
-                    elif mtext[:3] == '###' and len(mtext) > 3:
-                         func.manageForm(event, mtext)
-                
-                    elif mtext == '@辨別洗錢小知識':
+                    if mtext == '@辨別洗錢小知識':
                        func.sendMulti(event)
     
                     elif mtext == '@法律資訊':
