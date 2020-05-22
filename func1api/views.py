@@ -87,10 +87,10 @@ def callback(request):
                         func.sendButton(event)
     
                     elif mtext == '@國內相關組織':
-                        func.sendButton(event1)
+                        func.sendQuickreply(event)
                 
                     elif mtext == '@國際相關組織':
-                        func.sendButton(event2)
+                        func.sendButton(event)
     
                     elif mtext == '@其他資訊':
                         func.sendMulti(event)
