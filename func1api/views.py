@@ -78,7 +78,7 @@ def callback(request):
                          func.manageForm(event, mtext)
                 
                     elif mtext == '@防制洗錢小知識':
-                        func.sendButton(event)
+                       func.sendMulti(event)
     
                     elif mtext == '@法律資訊':
                         func.sendImage(event)
