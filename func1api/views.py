@@ -84,7 +84,7 @@ def callback(request):
                         func.sendImage(event)
                 
                     elif mtext == '@重要資訊':
-                        func.sendVoice(event)
+                        func.sendButton(event)
     
                     elif mtext == '@國內相關組織':
                         func.sendButton(event1)
