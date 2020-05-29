@@ -32,7 +32,7 @@ def callback(request):
                     elif mtext == '@法律資訊':
                         func.sendImage(event)
                 
-                    elif mtext == '@重要資訊':
+                    elif mtext == '@重要查詢':
                         func.sendVoice(event)
     
                     elif mtext == '@國內相關組織':
