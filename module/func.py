@@ -109,47 +109,26 @@ def sendButton(event):  #按鈕樣版
 def sendCarousel(event):  #轉盤樣板
     try:
         message = TemplateSendMessage(
-            alt_text='轉盤樣板',
+            alt_text='其他',
             template=CarouselTemplate(
                 columns=[
                     CarouselColumn(
-                        thumbnail_image_url='https://i.imgur.com/4QfKuz1.png',
-                        title='這是樣板一',
-                        text='第一個轉盤樣板',
+                        thumbnail_image_url='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT4NQBoplbhOoo3bc_Zgj37mraOw88ddrWP7LTZfpfnY7FcDr5m&usqp=CAU',
+                        title=' ',
+                        text='其他資訊',
                         actions=[
-                            MessageTemplateAction(
-                                label='文字訊息一',
-                                text='賣披薩'
-                            ),
+
                             URITemplateAction(
-                                label='連結文淵閣網頁',
-                                uri='http://www.e-happy.com.tw'
+                                label='洗錢防制之最終受益人查詢',
+                                uri='https://reurl.cc/AqXVEe'
                             ),
-                            PostbackTemplateAction(
-                                label='回傳訊息一',
-                                data='action=sell&item=披薩'
+                            MessageTemplateAction(
+                                label='國際防制洗錢標準',
+                                text='1.處罰洗錢及資恐行為2.沒收不法所得及進行目標制裁3.國際合作4.建立防治機制'
                             ),
                         ]
                     ),
-                    CarouselColumn(
-                        thumbnail_image_url='https://i.imgur.com/qaAdBkR.png',
-                        title='這是樣板二',
-                        text='第二個轉盤樣板',
-                        actions=[
-                            MessageTemplateAction(
-                                label='文字訊息二',
-                                text='賣飲料'
-                            ),
-                            URITemplateAction(
-                                label='連結台大網頁',
-                                uri='http://www.ntu.edu.tw'
-                            ),
-                            PostbackTemplateAction(
-                                label='回傳訊息二',
-                                data='action=sell&item=飲料'
-                            ),
-                        ]
-                    )
+
                 ]
             )
         )
