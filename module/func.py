@@ -49,6 +49,29 @@ def sendMulti(event):  #多項傳送
     except:
         line_bot_api.reply_message(event.reply_token,TextSendMessage(text='發生錯誤！'))
 
+def sendButton(event):  #按鈕樣版
+    try:
+        message = TemplateSendMessage(
+            alt_text='重要資訊',
+            template=ButtonsTemplate(
+                thumbnail_image_url='https://cnews.com.tw/wp-content/uploads/%E5%8F%B0%E7%81%A3%E5%8F%8D%E6%B4%97%E9%8C%A2%E9%98%B2%E5%88%B6%E3%80%8C%E8%90%BD%E5%BE%8C%E3%80%8D-%E9%87%91%E7%AE%A1%E6%9C%83%E7%A0%94%E8%AD%B0%E7%9B%B8%E9%97%9C%E6%8E%AA%E6%96%BD.jpg',  #顯示的圖片
+                title=' ',  #主標題
+                text='查詢特定人士：',  #副標題
+                actions=[
+                    MessageTemplateAction(  #顯示文字計息
+                        label='查詢董監事',
+                        text='https://reurl.cc/AqXVEe'
+                    ),
+                    MessageTemplateAction( 
+                        label='查詢公司',
+                        text='https://reurl.cc/AqXVEe'
+                    ),
+                ]
+            )
+        )
+        line_bot_api.reply_message(event.reply_token, message)
+    except:
+        line_bot_api.reply_message(event.reply_token,TextSendMessage(text='發生錯誤！'))
 
 
 def sendQuickreply(event):  #快速選單
