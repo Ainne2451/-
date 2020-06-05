@@ -82,13 +82,13 @@ def sendButton(event):  #按鈕樣版
                 title=' ',  #主標題
                 text='查詢特定人士：',  #副標題
                 actions=[
-                    MessageTemplateAction(  #顯示文字計息
+                URITemplateAction(
                         label='查詢公司名',
-                        text='https://reurl.cc/AqXVEe'
+                        uri='https://reurl.cc/AqXVEe'
                     ),
-                    MessageTemplateAction( 
+                URITemplateAction(
                         label='查詢董監事',
-                        text='https://reurl.cc/AqXVEe'
+                        uri='https://reurl.cc/AqXVEe'
 
                     ),
                 ]
