@@ -166,7 +166,6 @@ def sendCarousel(event):  #轉盤樣板
                         title=' ',
                         text='其他資訊',
                         actions=[
-
                             URITemplateAction(
                                 label='洗錢防制之最終受益人查詢',
                                 uri='https://reurl.cc/AqXVEe'
@@ -175,6 +174,12 @@ def sendCarousel(event):  #轉盤樣板
                                 label='國際防制洗錢標準',
                                 text='1.處罰洗錢及資恐行為2.沒收不法所得及進行目標制裁3.國際合作4.建立防治機制'
                             ),
+		          
+                             URITemplateAction(
+                                label='最新資訊',
+                                uri='https://www.amlo.moj.gov.tw/1461/1467/Lpsimplelist'
+                            ),
+                            
                         ]
                     ),
 
