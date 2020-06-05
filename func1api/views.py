@@ -28,22 +28,21 @@ def callback(request):
                     mtext = event.message.text
                     if mtext == '@辨別洗錢小知識':
                        func.sendMulti(event)
-    
+       
                     elif mtext == '@法律資訊':
                         func.sendImage(event)
                 
-                    elif mtext == '@重要查詢':
-                        func.sendVoice(event)
+                    elif mtext == '@重要資訊':
+                        func.sendButton(event)
     
                     elif mtext == '@國內相關組織':
                         func.sendQuickreply(event)
                 
                     elif mtext == '@國外相關組織':
-                        func.sendButton(event)
+                        func.sendButton2(event)
     
                     elif mtext == '@其他資訊':
                         func.sendCarousel(event)
-    
     
             if isinstance(event, PostbackEvent):  #PostbackTemplateAction觸發此事件
                 backdata = dict(parse_qsl(event.postback.data))  #取得data資料
