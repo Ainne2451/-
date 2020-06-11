@@ -60,11 +60,11 @@ def sendButton2(event):  #按鈕樣版
                 actions=[
                     MessageTemplateAction(  #顯示文字計息
                         label='查詢董監事',
-                        text='https://reurl.cc/AqXVEe'
+                        text='https://reurl.cc/lVAQl9'
                     ),
                     MessageTemplateAction( 
                         label='查詢公司',
-                        text='https://reurl.cc/AqXVEe'
+                        text='https://reurl.cc/lVAQl9'
                     ),
                 ]
             )
@@ -168,7 +168,7 @@ def sendCarousel(event):  #轉盤樣板
                         actions=[
                             URITemplateAction(
                                 label='洗錢防制之最終受益人查詢',
-                                uri='https://reurl.cc/AqXVEe'
+                                uri='https://reurl.cc/lVAQl9'
                             ),
                             MessageTemplateAction(
                                 label='國際防制洗錢標準',
