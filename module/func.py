@@ -84,13 +84,9 @@ def sendButton(event):  #按鈕樣版
                 actions=[
                 URITemplateAction(
                         label='查詢公司名',
-                        uri='https://reurl.cc/AqXVEe'
+                        uri='https://reurl.cc/lVAQl9'
                     ),
-                URITemplateAction(
-                        label='查詢董監事',
-                        uri='https://reurl.cc/AqXVEe'
 
-                    ),
                 ]
             )
         )
